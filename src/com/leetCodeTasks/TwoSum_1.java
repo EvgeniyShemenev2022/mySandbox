@@ -21,19 +21,21 @@ public class TwoSum_1 {
     public static void main(String[] args) {
 
         int[] array = new int[]{1, 8, 9, 4, 12, 7, 6, 19, 2};
-        System.out.println(Arrays.toString(twoSum(array, 9)));
+        int[] array2 = new int[]{-5, 9, 17, 44, 3, 2, 4};
+        int[] array3 = new int[]{4, 3, 5};
+        System.out.println(Arrays.toString(twoSum(array3, 8)));
     }
-
 
     public static int[] twoSum(int[] nums, int target) {
 
-        int pivot = 0;
         int[] answer = new int[2];
         for (int i = 0; i < nums.length; i++) {
-            if (i == pivot) continue;
-            if (nums[pivot] + nums[i] == target) {
-                answer[0] = pivot;
-                answer[1] = i;
+            for (int j = nums.length - 1; j >= 0; j--) {
+                if (nums[i] + nums[j] == target && i != j) {
+                    answer[0] = i;
+                    answer[1] = j;
+                    break;
+                }
             }
         }
         return answer;
