@@ -17,6 +17,7 @@ Intermediate methods не вызываются до тех пор, пока не
 * limit(n) - пропускает дальше только первые n эл-в 
 * skip(n)  - не пропускает дальше первые n эл-в
 * mapToInt()
+* parallelStream() -> использовать только при умножении или сложении;
 
 
 ## 4 Terminal methods
@@ -25,13 +26,13 @@ Terminal methods возвращают либо void, либо отличное �
 * collect()
 * reduce()
 * count()
-* .groupingBy()
-* .partitioningBy()
-* .findFirst()  -> return Optional -> либо без проверки использовать .findFirst().get
-* .min()  -> return Optional
-* .max()  -> return Optional
-* .sum()
-* .average()
+* groupingBy()
+* partitioningBy()
+* findFirst()  -> return Optional -> либо без проверки использовать .findFirst().get
+* min()  -> return Optional
+* max()  -> return Optional
+* sum()
+* average()
 * 
 * 
 
