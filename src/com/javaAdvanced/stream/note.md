@@ -14,9 +14,12 @@ Intermediate methods не вызываются до тех пор, пока не
 * map()
 * flatMap()
 * distinct()
+* limit(n) - пропускает дальше только первые n эл-в 
+* skip(n)  - не пропускает дальше первые n эл-в
+* mapToInt()
 
 
-## 4
+## 4 Terminal methods
 Terminal methods возвращают либо void, либо отличное от stream значение:
 * foreEach() 
 * collect()
@@ -25,6 +28,12 @@ Terminal methods возвращают либо void, либо отличное �
 * .groupingBy()
 * .partitioningBy()
 * .findFirst()  -> return Optional -> либо без проверки использовать .findFirst().get
+* .min()  -> return Optional
+* .max()  -> return Optional
+* .sum()
+* .average()
+* 
+* 
 
 
 ## 5
