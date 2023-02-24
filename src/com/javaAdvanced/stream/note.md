@@ -12,6 +12,8 @@ Intermediate methods не вызываются до тех пор, пока не
 * sorted()
 * filer()
 * map()
+* flatMap()
+* distinct()
 
 
 ## 4
