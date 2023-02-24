@@ -28,6 +28,8 @@ public class CountWordsHashMap {
      */
     public static void mapCounterStream(String line) {
 
+        // the regular expression \s matches a single whitespace character,
+        // while \s+ will match one or more whitespace characters.
         String[] words = line.split("\\s+");
 
         Map<String, Integer> mapping = Arrays.stream(words)

@@ -22,6 +22,9 @@ Terminal methods возвращают либо void, либо отличное �
 * collect()
 * reduce()
 * count()
+* .groupingBy()
+* .partitioningBy()
+* .findFirst()  -> return Optional -> либо без проверки использовать .findFirst().get
 
 
 ## 5
