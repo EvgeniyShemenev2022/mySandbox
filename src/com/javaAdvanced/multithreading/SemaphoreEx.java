@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  * Синхронизатор Semaphore - (Hi Level CONCURRENCY);
- *
+ * <p>
  * Синхронизатор позволяет ограничить доступ к какому-то ресурсу. В конструктор
  * Semaphore нужно передавать количество потоков, которым он будет разрешать
  * одновременно использовать этот ресурс.
@@ -25,12 +25,12 @@ public class SemaphoreEx {
     }
 }
 
-class  Person extends Thread{
+class Person extends Thread {
 
     String name;
     Semaphore semaphore;
 
-    public Person (String name, Semaphore semaphore){
+    public Person(String name, Semaphore semaphore) {
         this.name = name;
         this.semaphore = semaphore;
         this.start(); // запуск потока при создании объекта
@@ -38,7 +38,7 @@ class  Person extends Thread{
 
     @Override
     public void run() {
-        System.out.println( name + " waiting");
+        System.out.println(name + " waiting");
         try {
             semaphore.acquire(); // получает разрешение от семафора на его блокировку
             System.out.println(name + " calling");
@@ -46,7 +46,7 @@ class  Person extends Thread{
             System.out.println(name + " finished calling");
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             semaphore.release(); // освобождаем разрешение семафора
         }
     }
