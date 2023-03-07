@@ -114,6 +114,12 @@ Future<Integer> future;
 метод `exchanger.exchange(T)` блокирует поток, пока его информацией не завладеет другой поток; 
 тип **point exchange** определяется в дженериках класса;
 
+### Класс AtomicInteger
+**AtomicInteger** - класс, который позволяет работать с целочисленными значениями int, используя атомарные операции;
+Имеет в арсенале много методов, некоторые из них:
+* .incrementAndGet();
+* .addAndGet(5);
+* .decrementAndGet();
 
 
 ## Methods
