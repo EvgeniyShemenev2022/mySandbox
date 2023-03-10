@@ -1,4 +1,4 @@
-package com.Shemenev;
+package com.Tasks;
 
 import java.util.Arrays;
 import java.util.Random;

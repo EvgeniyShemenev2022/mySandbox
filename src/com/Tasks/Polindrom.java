@@ -1,4 +1,4 @@
-package com.Shemenev;
+package com.Tasks;
 
 /**
  * Напишите Java-программу, чтобы определить,

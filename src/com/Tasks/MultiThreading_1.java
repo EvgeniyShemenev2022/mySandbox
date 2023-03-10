@@ -1,4 +1,4 @@
-package com.Shemenev;
+package com.Tasks;
 
 /**
  * демонстрация основных принципов многопоточности

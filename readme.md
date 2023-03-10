@@ -6,6 +6,7 @@
 * lambda
 * stream API
 * multithreading
+* input / output 
 
 ###  -> Shemenev
 #### Решение некоторых практических задач / алгоритмы
