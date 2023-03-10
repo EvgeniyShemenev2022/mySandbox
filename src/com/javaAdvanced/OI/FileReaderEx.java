@@ -6,7 +6,6 @@ import java.io.IOException;
 /**
  * FileReader
  * Простой пример чтения из файла (посимвольно) в блоке try/catch
- *
  */
 public class FileReaderEx {
 
@@ -16,7 +15,7 @@ public class FileReaderEx {
         try {
             reader = new FileReader("IOtest.txt");
             int character;
-            while ((character=reader.read()) != -1){
+            while ((character = reader.read()) != -1) {
                 System.out.print((char) character); // casting
             }
         } catch (IOException e) {
