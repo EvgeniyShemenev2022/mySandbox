@@ -25,3 +25,14 @@ BufferedReader reader = new BufferedReader(new FileReader("FileName.txt"))`
 
 Используется для **читабельных** файлов. Для прочих файлов есть классы _FileInputStream & FileOutputStream_;
 
+### DataInputStream и DataOutputStream
+Используются для работы с примитивными типами данных.
+`DataOutputStream outputStream = new DataOutputStream(new FileOutputStream("my_test.bin"));`
+Запись происходит в бинарные файлы.
+
+
+### Сериализация
+Сериализация - процесс преобразования объекта в последовательность байт. 
+Де сериализация - обратный процесс;
+
+
