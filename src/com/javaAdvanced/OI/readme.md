@@ -34,5 +34,9 @@ BufferedReader reader = new BufferedReader(new FileReader("FileName.txt"))`
 ### Сериализация
 Сериализация - процесс преобразования объекта в последовательность байт. 
 Де сериализация - обратный процесс;
+`try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("employees.bin")))
+try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("employees.bin")))`
 
+Объект, класс которого не имплиментирует **Serializable** не может быть сериализован!
+Все другие объекты, являющиеся параметрами записываемого объекта так же должны быть **Serializable**!!!
 

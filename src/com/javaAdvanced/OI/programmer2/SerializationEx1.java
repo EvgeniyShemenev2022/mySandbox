@@ -18,7 +18,6 @@ public class SerializationEx1 {
             employees = (ArrayList) inputStream.readObject();
             System.out.println(employees);
 
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
