@@ -46,3 +46,7 @@ try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("
 Настоятельно рекомендуется явным образом объявлять serialVersionUID у объекта, т.к. внутренний механизм компилятора 
 очень чувствителен к изменению содержания класса.
 `static final long serialVersionUID = 1;`
+
+В IntelliJ IDEA можно добавить опцию проверки наличия поля **SerialVersionUID**: 
+_Preferences -> Editor -> Inspections -> JVM languages ->_ поставить галочку напротив 
+_Serializable class without 'serialVersionUID'_
