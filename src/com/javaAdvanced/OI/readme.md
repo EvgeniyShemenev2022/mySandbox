@@ -50,3 +50,8 @@ try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("
 В IntelliJ IDEA можно добавить опцию проверки наличия поля **SerialVersionUID**: 
 _Preferences -> Editor -> Inspections -> JVM languages ->_ поставить галочку напротив 
 _Serializable class without 'serialVersionUID'_
+
+### RandomAccessFile
+Класс RandomAccessFile позволяет читать\записывать информацию из\в любое место файла.
+`try (RandomAccessFile file = new RandomAccessFile("IOtest3.txt", "rw"))`
+имеет в наличии множество полезных методов (некоторые рассмотрены в файле)
